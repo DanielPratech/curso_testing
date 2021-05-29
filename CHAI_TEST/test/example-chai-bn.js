@@ -87,5 +87,4 @@ describe('Ejemplos de librería chai-bn', () => {
       expect(zero).to.be.a.bignumber.that.zero;
     });
   });
-
 });

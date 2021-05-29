@@ -1,4 +1,4 @@
-const { suma } = require("../sum");
+/* const { suma } = require("../sum");
 const expect = require('chai').expect;
 
 describe('Se validaran las sumas', () => {
@@ -8,3 +8,4 @@ describe('Se validaran las sumas', () => {
         });
     });
 });
+ */
