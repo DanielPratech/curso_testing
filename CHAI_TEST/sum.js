@@ -7,6 +7,4 @@ const suma = (num1, num2) => {
 };
 
 
-module.exports={
-    suma
-}
+export default suma;
