@@ -36,4 +36,13 @@ describe('Promise testing', () => {
     it('Promise resolve with become', () => {
         return promiseSumFunction2(1, 2).should.become(Obj);
     });
+
+    it('Multiple promise', () => {
+        return Promise.all([
+            promiseSumFunction(1, 2).should.eventually.eq(3),
+            promiseSumFunction(2, -2).should.be.rejected,
+            promiseSumFunction2(1, 2).should.become(Obj),
+            promiseSumFunction2(1, 2).should.become(Obj)
+        ]);
+    });
 });

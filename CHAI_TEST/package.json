@@ -13,7 +13,8 @@
     "bn.js": "^5.2.0",
     "chai": "^4.3.4",
     "chai-bn": "^0.2.1",
-    "mocha": "^8.4.0"
+    "mocha": "^8.4.0",
+    "mockhttp": "0.0.1"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
@@ -24,8 +25,11 @@
     "@babel/register": "^7.13.16",
     "chai-as-promised": "^7.1.1",
     "chai-deep-match": "^1.2.1",
+    "chai-fetch": "^0.3.1",
     "chai-fs": "^2.0.0",
     "chai-json-schema": "^1.5.1",
-    "chai-json-schema-ajv": "^5.2.4"
+    "chai-json-schema-ajv": "^5.2.4",
+    "graphql-tools": "^7.0.5",
+    "http-server-mock": "^0.2.1"
   }
 }
