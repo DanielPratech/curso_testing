@@ -16,7 +16,7 @@ const Obj = {
 
 describe('Promise testing', () => {
     it('Promise resolve', () => {
-        return promiseSumFunction(1, 2).should.eventually.eq(3);
+        return promiseSumFunction(1, -2).should.eventually.eq(3);
     });
 
     it('Promise reject', () => {
