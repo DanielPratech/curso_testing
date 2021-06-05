@@ -16,11 +16,15 @@ const Obj = {
 
 describe('Promise testing', () => {
     it('Promise resolve', () => {
-        return promiseSumFunction(1, -2).should.eventually.eq(3);
+        return promiseSumFunction(1, 2).should.eventually.eq(3);
     });
 
     it('Promise reject', () => {
         return promiseSumFunction(2, -2).should.be.rejected;
+    });
+
+    it('Promise reject', () => {
+        return promiseSumFunction2(2, -2).should.be.rejected;
     });
 
     it('Promise resolve with have', () => {

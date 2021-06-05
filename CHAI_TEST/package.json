@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha  --require @babel/register "
+    "test": "mocha  --require @babel/register ",
+    "test:coverage": "nyc --require @babel/register --reporter=html  npm test",
+    "test:report": "mocha  --require @babel/register -t 3000  --reporter mochawesome"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +17,8 @@
     "chai-bn": "^0.2.1",
     "mocha": "^8.4.0",
     "mochawesome": "^6.2.2",
-    "mockhttp": "0.0.1"
+    "mockhttp": "0.0.1",
+    "nyc": "^15.1.0"
   },
   "dependencies": {
     "@babel/cli": "^7.13.16",
