@@ -1,0 +1,12 @@
+Mock functions
+Las funciones de simulación mock
+- Captura llamadas a funciones y sus parámetros
+- Captura instancias de constructores al instanciarse con new
+- Permite configurar los valores de retorno
+
+Dos maneras de simular funciones:
+- Crear una función mock para usarla en la prueba
+- Escribiendo manualmente el mock para sobreescribir la dependencia a un módulo.
+
+Propiedad .mock
+Todas las jest.fn tienen la propiedad mock
